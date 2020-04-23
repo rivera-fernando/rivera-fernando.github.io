@@ -10,12 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Resume</title>
   </head>
-  <body>
+  <body onload="updateMode()">
     <nav>
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
          <li><a href="../">Home</a></li>
          <li><a href="/resume">Resume</a></li>
+       </ul>
+       <ul id="nav-mobile" class="right">
          <div onclick="myFunction()">
            <i class="material-icons">tonality</i>
          </div>
@@ -33,6 +35,24 @@
       function myFunction() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+      if(document.cookie == "") {
+        document.cookie = "dark=no";
+      }
+      if (document.cookie=="dark=no") {
+        document.cookie = "dark=yes";
+      } else {
+        document.cookie = "dark=no";
+      }
+      console.log(document.cookie);
+      }
+      function checkMode() {
+        alert(document.cookie);
+      }
+      function updateMode() {
+        if (document.cookie == "dark=yes") {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
       }
     </script>
     <footer class="page-footer">
