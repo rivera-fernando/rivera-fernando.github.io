@@ -2165,6 +2165,11 @@ body {
   margin: 0;
 }
 
+.dark-mode{
+  background-color: #212121;
+  color: #FFFFFF;
+}
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -2238,10 +2243,15 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
+  color: #9575cd;
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
+}
+
+a:link {
+  color: #9575cd;
 }
 
 /**
@@ -2606,7 +2616,7 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
+  color: #9575cd;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2945,8 +2955,8 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  color: #fff;
-  background-color: #ee6e73;
+  color: #000000;
+  background-color: #e0e0e0;
 }
 
 .page-footer .footer-copyright {
@@ -2965,8 +2975,18 @@ ul.staggered-list li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  color: #000000;
+  background-color: #e0e0e0;
+}
+
+.dark-mode .page-footer {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.dark-mode .page-footer .footer-copyright {
+  color: #ffffff;
+  background-color: #333333;
 }
 
 table, th, td {
@@ -4271,10 +4291,15 @@ table span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #e0e0e0;
   width: 100%;
   height: 56px;
   line-height: 56px;
+}
+
+.dark-mode nav{
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 nav.nav-extended {
@@ -4745,17 +4770,24 @@ small {
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
+  background-color: #e0e0e0;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
+  height: 340px;
+}
+
+.dark-mode .card{
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 .card .card-title {
   font-size: 24px;
   font-weight: 300;
+  color: #673ab7;
 }
 
 .card .card-title.activator {
@@ -5156,7 +5188,7 @@ small {
   height: 7px;
   width: 14px;
   border-radius: 0 0 50% 50%;
-  background-color: #323232;
+  background-color: #333333;
   z-index: -1;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
@@ -5607,7 +5639,7 @@ button.btn-floating {
 }
 
 body.keyboard-focused .dropdown-content li:focus {
-  background-color: #dadada;
+  background-color: #212121;
 }
 
 .input-field.col .dropdown-content [type="checkbox"] + label {
@@ -5919,7 +5951,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .sidenav .collapsible-body,
 .sidenav.fixed .collapsible-body {
   border: 0;
-  background-color: #fff;
+  background-color: #212121;
 }
 
 .sidenav .collapsible-body li a,
@@ -7242,7 +7274,7 @@ select:disabled {
 }
 
 body.keyboard-focused .select-dropdown.dropdown-content li:focus {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: #212121;
 }
 
 .select-dropdown.dropdown-content li:hover {
@@ -7728,12 +7760,12 @@ input[type=range]::-ms-thumb {
 
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #ee6e73;
+  background-color: #212121;
 }
 
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
-  color: #fff;
+  color: #212121;
 }
 
 .sidenav .collapsible-body {
