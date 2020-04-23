@@ -124,7 +124,8 @@
       element.classList.toggle("dark-mode");
       if (document.cookie="dark=yes") {
         document.cookie = "dark=no";
-      } elseif (document.cookie="dark=no") {
+      }
+      else {
         document.cookie = "dark=yes";
       }
       console.log(document.cookie);
