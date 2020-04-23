@@ -16,8 +16,11 @@
        <ul id="nav-mobile" class="left">
          <li><a href="#">Home</a></li>
          <li><a href="/resume">Resume</a></li>
+         <li><button onclick="checkMode()">Show cookies</button>
+</li>
          <div onclick="myFunction()">
            <i class="material-icons">tonality</i>
+
          </div>
        </ul>
      </div>
@@ -119,6 +122,11 @@
       function myFunction() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+      document.cookie = "dark=yes";
+      console.log(document.cookie);
+      }
+      function checkMode() {
+        alert(document.cookie);
       }
     </script>
     <footer class="page-footer">
