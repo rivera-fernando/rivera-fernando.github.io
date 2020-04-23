@@ -122,6 +122,7 @@
       function myFunction() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+      console.log(document.cookie);
       if (document.cookie="dark=yes") {
         document.cookie = "dark=no";
       } else {
