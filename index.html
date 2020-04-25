@@ -11,6 +11,14 @@
       <title>Fernando Rivera</title>
     </head>
   <body onload="updateMode()">
+    <script type="text/javascript">
+    function updateMode() {
+      if (document.cookie == "dark=yes") {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    }
+    </script>
     <nav>
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
@@ -134,12 +142,7 @@
       function checkMode() {
         alert(document.cookie);
       }
-      function updateMode() {
-        if (document.cookie == "dark=yes") {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-        }
-      }
+
     </script>
     <footer class="page-footer">
     <div class="container">
