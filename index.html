@@ -32,6 +32,7 @@
        </ul>
      </div>
     </nav>
+    <input type="text" class="datepicker">
     <div class="container">
       <h3>Hey, I'm Fernando Rivera.</h3>
       <h4>About Me</h4>
@@ -142,6 +143,10 @@
       function checkMode() {
         alert(document.cookie);
       }
+      document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.datepicker');
+  var instances = M.Datepicker.init(elems, options);
+});
     </script>
     <footer class="page-footer">
     <div class="container">
