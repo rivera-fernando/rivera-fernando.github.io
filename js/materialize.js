@@ -12372,3 +12372,27 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
+
+//TODO: look into cookie checking, might break if more cookies are addded
+function updateModeFromCookie() {
+  // TODO: look into proper cookie checking, I think this breaks if you add
+  // more cookies
+  if (document.cookie == "dark=yes") {
+    // TODO: this assumes you're in light mode
+    document.body.classList.toggle("dark-mode");
+  }
+}
+
+function changeMode() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+if(document.cookie == "") {
+  document.cookie = "dark=no";
+}
+if (document.cookie=="dark=no") {
+  document.cookie = "dark=yes";
+} else {
+  document.cookie = "dark=no";
+}
+console.log(document.cookie);
+}

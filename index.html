@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
-      <meta name="theme-color" content="#212121">
+      <meta name="theme-color" content="#212121" />
       <!--Import Google Icon Font-->
+      <!-- TODO: make this font file local-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
+      <!-- TODO: google viewports to understand -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/materialize.js"></script>
       <title>Fernando Rivera</title>
     </head>
-  <body onload="updateMode()">
-    <script type="text/javascript">
-    function updateMode() {
-      if (document.cookie == "dark=yes") {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
-    }
-    </script>
+  <body onload="updateModeFromCookie()">
     <nav>
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
          <li><a href="#">Home</a></li>
        </ul>
        <ul id="nav-mobile" class="right">
-         <div onclick="myFunction()">
+         <div onclick="changeMode()">
            <i class="material-icons">tonality</i>
          </div>
        </ul>
@@ -124,31 +119,12 @@
     <div class="row">
         <h4>Download my <a href="./resume.pdf" download>Resume</a></h4>
     </div>
-    </div>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript">
-      function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-      if(document.cookie == "") {
-        document.cookie = "dark=no";
-      }
-      if (document.cookie=="dark=no") {
-        document.cookie = "dark=yes";
-      } else {
-        document.cookie = "dark=no";
-      }
-      console.log(document.cookie);
-      }
-      function checkMode() {
-        alert(document.cookie);
-      }
-    </script>
+  </div>
     <footer class="page-footer">
     <div class="container">
       <div class="row">
         <h4>Let's connect.</h4>
+        <!-- TODO: Change images to static folder not links -->
           <a href="https://github.com/rivera-fernando/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="" width="120px"></a>
           <br>
           <a href="https://www.linkedin.com/in/fernando-rivera-04559019b"><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="" width="150px"></a>
