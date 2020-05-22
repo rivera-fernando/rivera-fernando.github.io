@@ -3106,12 +3106,21 @@ td, th {
   position: relative;
 }
 
+.dark-mode .collection {
+  border: 1px solid #000000;
+}
+
 .collection .collection-item {
   background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 20px;
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.dark-mode .collection .collection-item {
+  background-color: #333333;
+  border-bottom: 1px solid #000000;
 }
 
 .collection .collection-item.avatar {
@@ -3170,11 +3179,15 @@ td, th {
   display: block;
   -webkit-transition: .25s;
   transition: .25s;
-  color: #26a69a;
+  color: #9575cd;
 }
 
 .collection a.collection-item:not(.active):hover {
   background-color: #ddd;
+}
+
+.dark-mode .collection a.collection-item:not(.active):hover {
+  background-color: #212121;
 }
 
 .collection.with-header .collection-header {
