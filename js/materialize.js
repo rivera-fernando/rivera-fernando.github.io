@@ -12373,23 +12373,37 @@ $jscomp.polyfill = function (e, r, p, m) {
   Range.init($('input[type=range]'));
 })(cash, M.anime);
 
+function getCookie(identifier) {
+  var name = identifier + "=";
+  var decodedCookie = decodeURIComponenet(document.cookie);
+  var ca = decodedCookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length)
+    }
+  }
+  return "";
+}
+
 //TODO: look into cookie checking, might break if more cookies are addded
 function updateModeFromCookie() {
-  // TODO: look into proper cookie checking, I think this breaks if you add
-  // more cookies
-  if (document.cookie == "dark=yes") {
-    // TODO: this assumes you're in light mode
+  var dark_mode = getCookie("dark");
+  if (dark_mode == "yes") {
     document.body.classList.toggle("dark-mode");
   }
 }
 
 function changeMode() {
-var element = document.body;
-element.classList.toggle("dark-mode");
-if(document.cookie == "") {
+document.body.classList.toggle("dark-mode");
+var dark_mode = getCookie("dark");
+if(dark_mode ==  "") {
   document.cookie = "dark=no";
 }
-if (document.cookie=="dark=no") {
+if (dark_mode == "no") {
   document.cookie = "dark=yes";
 } else {
   document.cookie = "dark=no";
