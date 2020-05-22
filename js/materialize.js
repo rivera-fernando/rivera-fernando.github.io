@@ -12408,5 +12408,4 @@ if (dark_mode == "no") {
 } else {
   document.cookie = "dark=no";
 }
-console.log(document.cookie);
 }
