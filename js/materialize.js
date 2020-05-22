@@ -12375,7 +12375,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
 function getCookie(identifier) {
   var name = identifier + "=";
-  var decodedCookie = decodeURIComponenet(document.cookie);
+  var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
