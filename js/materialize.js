@@ -12401,7 +12401,7 @@ function changeMode() {
 document.body.classList.toggle("dark-mode");
 var dark_mode = getCookie("dark");
 if(dark_mode ==  "") {
-  document.cookie = "dark=no";
+  document.cookie = "dark=yes";
 }
 if (dark_mode == "no") {
   document.cookie = "dark=yes";
