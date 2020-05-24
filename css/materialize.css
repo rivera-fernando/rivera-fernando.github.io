@@ -4,6 +4,8 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
+ 
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2955,9 +2957,6 @@ ul.staggered-list li {
 }
 
 .page-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding-top: 20px;
   color: #000000;
   background-color: #e0e0e0;
