@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head onload="updateModeFromCookie()">
+    <head>
       <meta name="theme-color" content="#212121" />
       <!--Import Google Icon Font-->
       <!-- TODO: make this font file local-->
@@ -20,7 +20,7 @@
       </script>
     </head>
   <body>
-    <nav>
+    <nav onload="updateModeFromCookie()">
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
          <li><a href="..">Home</a></li>
