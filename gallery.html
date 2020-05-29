@@ -17,6 +17,9 @@
         $(document).ready(function(){
           $('.materialboxed').materialbox();
         });
+        $(document).ready(function(){
+        $('.carousel').carousel();
+        });
       </script>
     </head>
   <body onload="updateModeFromCookie()">
@@ -36,125 +39,114 @@
     <div class="container">
       <h3>Gallery</h3>
       <p>These are some collection of the pictures I have taken randomly through trips
-      and other experiences, enjoy!</p>
+      and other experiences, enjoy! (click on any of them to view the full image)</p>
       <div class="row">
-        <h4>Animals</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/animals-1.jpg">
+        <div class="col m6 s12">
+          <h4>Animals</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/animals-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/animals-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/animals-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/animals-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/animals-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/animals-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/animals-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/animals-4.jpg"></a>
+            <a class="carousel-item" href="./gallery/animals-5.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/animals-5.jpg"></a>
+          </div>
         </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/animals-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/animals-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/animals-4.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/animals-5.jpg">
+        <div class="col m6 s12">
+          <h4>California</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/cali-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cali-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/cali-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cali-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/cali-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cali-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/cali-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cali-4.jpg"></a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <h4>California</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cali-1.jpg">
+        <div class="col m6 s12">
+          <h4>Cornell</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/cornell-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/cornell-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/cornell-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/cornell-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-4.jpg"></a>
+            <a class="carousel-item" href="./gallery/cornell-5.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-5.jpg"></a>
+            <a class="carousel-item" href="./gallery/cornell-6.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/cornell-6.jpg"></a>
+          </div>
         </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cali-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cali-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cali-4.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <h4>Cornell</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-1.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-4.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-5.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/cornell-6.jpg">
+        <div class="col m6 s12">
+          <h4>New York</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/ny-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/ny-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/ny-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/ny-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/ny-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/ny-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/ny-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/ny-4.jpg"></a>
+            <a class="carousel-item" href="./gallery/ny-5.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/ny-5.jpg"></a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <h4>New York</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/ny-1.jpg">
+        <div class="col m6 s12">
+          <h4>Vermont</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/vermont-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/vermont-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/vermont-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/vermont-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/vermont-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/vermont-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/vermont-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/vermont-4.jpg"></a>
+            <a class="carousel-item" href="./gallery/vermont-5.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/vermont-5.jpg"></a>
+          </div>
         </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/ny-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/ny-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/ny-4.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/ny-5.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <h4>Vermont</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/vermont-1.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/vermont-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/vermont-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/vermont-4.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/vermont-5.jpg">
+        <div class="col m6 s12">
+          <h4>South Florida</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/home-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/home-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/home-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/home-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/home-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/home-3.jpg"></a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <h4>South Florida</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/home-1.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/home-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/home-3.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <h4>Univerity of Florida</h4>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/uf-1.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/uf-2.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/uf-3.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/uf-4.jpg">
-        </div>
-        <div class="col xl2 l3 m4 s6">
-          <img loading="lazy" style="object-fit: cover;" class="materialboxed" width="150" height="200" src="./gallery/uf-5.jpg">
+        <div class="col m6 s12">
+          <h4>University of Florida</h4>
+          <div class="carousel">
+            <a class="carousel-item" href="./gallery/uf-1.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/uf-1.jpg"></a>
+            <a class="carousel-item" href="./gallery/uf-2.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/uf-2.jpg"></a>
+            <a class="carousel-item" href="./gallery/uf-3.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/uf-3.jpg"></a>
+            <a class="carousel-item" href="./gallery/uf-4.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/uf-4.jpg"></a>
+            <a class="carousel-item" href="./gallery/uf-5.jpg">
+            <img  style="object-fit: scale-down;" width="150" height="200"src="./gallery/uf-5.jpg"></a>
+          </div>
         </div>
       </div>
     </div>
