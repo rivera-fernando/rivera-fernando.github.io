@@ -1,36 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-  </head>
+<html lang="en">
+    <head>
+      <meta name="theme-color" content="#212121" />
+      <!--Import Google Icon Font-->
+      <!-- TODO: make this font file local-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <!-- TODO: google viewports to understand -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <title>Dashboard</title>
+    </head>
   <body>
-    <nav class="level">
-      <p class="level-item has-text-centered">
-        <a class="link is-info" href="#">Home</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info" href="#">Dashboard</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info" href="#">Information</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info" href="#">Events</a>
-      </p>
+    <nav>
+     <div class="nav-wrapper">
+       <ul id="nav-mobile" class="left">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Dashboard</a></li>
+         <li><a href="#">Information</a></li>
+         <li><a href="#">Events</a></li>
+       </ul>
+       <ul id="nav-mobile" class="right">
+         <!--
+         <li><input placeholder="edu email" type="email" class="validate"></li>
+         <li><p>&nbsp;</p></li>
+         <li><input placeholder="password" type="password" class="validate"></li>
+         -->
+         <li><i class="material-icons">settings</i></li>
+       </ul>
+     </div>
     </nav>
-  <section class="section">
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+      <h2>Student Dashboard</h2>
+      <div style="background: #ebebeb;"class="row">
+        <div class="col m8 s12">
+          <h6>Have you been diagnosed with COVID-19?</h6>
+        </div>
+        <div class="center-align col m2 s6">
+          <a style="width: 100%;" class="waves-effect waves-light btn">Yes</a>
+        </div>
+        <div class="center-align col m2 s6">
+          <a style="width: 100%;" class="waves-effect waves-light btn">No</a>
+        </div>
+      </div>
+      <div style="background: #ebebeb;" class="row">
+        <div class="col m9 s12">
+          <h6>Have you been exposed. (According to our maps data)</h6>
+        </div>
+        <div class="center-align col m3 s12">
+          <h6>Potentially</h6>
+        </div>
+      </div>
+      <div style="height: 300px;" class="row">
+        <div style="height: inherit; background: #ebebeb;" class="col m4 s12">
+          <h5>Daily Temperature</h5>
+          <br><br>
+          <div class="valign-wrapper row">
+              <i class="material-icons medium">whatshot</i>
+              <input placeholder="temp" type="number" class="validate">
+          </div>
+          <br><br>
+          <div class="center-align row">
+            <a class="waves-effect waves-light btn">Submit</a>
+          </div>
+        </div>
+        <div style="height: inherit; background: #ebebeb;" class="col m7 push-m1 s12">
+          <h5>Temperature Trends</h5>
+          <div class="center-align">
+            <img style="height: 80%;max-width: 100%;" src="images/temp_chart.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+      <div style="height: 350px;" class="row">
+        <div style="height: inherit; background: #ebebeb;" class="col m4 s12">
+          <h5>Possible Symptoms</h5>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Filled in</span>
+              </label>
+            </p>
+          </form>
+        </div>
+        <div style="height: inherit; background: #ebebeb;" class="col m7 push-m1 s12">
+          <h5>Helpful Info</h5>
+          <p>This section updates with helpful links to pages related to whichever
+          symptoms the user has checked, easy javascript function to populate that.</p>
+        </div>
+      </div>
+      <h2>Announcements</h2>
+      <div style="background: #ebebeb;"class="row">
+        <h5>FROM--DATE</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit ex et velit viverra egestas. Praesent semper ligula non odio gravida eleifend sit amet sed enim. Duis ac cursus lorem.</p>
+      </div>
+      <div style="background: #ebebeb;"class="row">
+        <h5>FROM--DATE</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit ex et velit viverra egestas. Praesent semper ligula non odio gravida eleifend sit amet sed enim. Duis ac cursus lorem.</p>
+      </div>
     </div>
-  </section>
   </body>
 </html>
