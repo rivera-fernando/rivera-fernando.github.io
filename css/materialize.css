@@ -4797,8 +4797,6 @@ small {
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 10px;
   height: 100%;
-  display:flex;
-
 }
 
 .dark-mode .card{
