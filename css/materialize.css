@@ -2979,7 +2979,7 @@ ul.staggered-list li {
           justify-content: space-between;
   padding: 10px 0px;
   color: #000000;
-  background-color: #e0e0e0;
+  background-color: #d3d3d3;
 }
 
 .dark-mode .page-footer {
@@ -2989,7 +2989,7 @@ ul.staggered-list li {
 
 .dark-mode .page-footer .footer-copyright {
   color: #ffffff;
-  background-color: #333333;
+  background-color: #2d2d2d;
 }
 
 table, th, td {
@@ -3104,7 +3104,7 @@ td, th {
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -4779,8 +4779,12 @@ small {
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   padding: 24px;
   margin: 0.5rem 0 1rem 0;
-  border-radius: 2px;
-  background-color: #fff;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+}
+
+.dark-mode .card-panel {
+  background-color: #2d2d2d;
 }
 
 .card {
@@ -4791,8 +4795,10 @@ small {
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
-  border-radius: 2px;
+  border-radius: 10px;
   height: 100%;
+  display:flex;
+
 }
 
 .dark-mode .card{
@@ -4836,7 +4842,7 @@ small {
 }
 
 .card.small {
-  height: 300px;
+  height: 370px;
 }
 
 .card.medium {
