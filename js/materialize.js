@@ -12422,5 +12422,5 @@ function displayPopUp () {
 }
 
 function dismiss() {
-  document.cookie = "dism=yes; path=/";
+  document.cookie = "dismissed=yes; path=/";
 }
