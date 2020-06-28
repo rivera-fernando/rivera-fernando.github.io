@@ -12411,8 +12411,12 @@ if (dark_mode == "no") {
 
 function displayPopUp () {
   var dismissed = getCookie("dismissed");
-  if (dismissed != "yes") {
-    $('.tap-target').tapTarget('open');
+  if (dismissed == "yes") {
+  }
+  else {
+    $(document).ready(function(){
+      $('.tap-target').tapTarget('open');
+    });
   }
 }
 
