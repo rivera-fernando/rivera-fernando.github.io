@@ -12412,6 +12412,7 @@ if (dark_mode == "no") {
 function displayPopUp () {
   var dismissed = getCookie("dismissed");
   if (dismissed == "yes") {
+    document.getElementById('feat').style.display = "none";
   }
   else {
     $(document).ready(function(){
