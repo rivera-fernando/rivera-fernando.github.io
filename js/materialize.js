@@ -12414,7 +12414,10 @@ function displayPopUp () {
   if (dismissed == "yes") {
   }
   else {
-    $('.tap-target').tapTarget('open');
+    $(document).ready(function(){
+      $('.tap-target').tapTarget();
+      $('.tap-target').tapTarget('open');
+    });
   }
 }
 
