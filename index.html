@@ -11,10 +11,16 @@
       <!--Let browser know website is optimized for mobile-->
       <!-- TODO: google viewports to understand -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <title>Fernando Rivera</title>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.tap-target').tapTarget();
+        });
+      </script>
     </head>
-  <body onload="updateModeFromCookie()">
+  <body onload="updateModeFromCookie();displayPopUp()">
     <nav>
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
@@ -134,6 +140,16 @@
         <h4>Download my <a href="./resume.pdf" download>Resume</a></h4>
     </div>
   </div>
+    <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
+      <a onclick="dismiss();"id="menu" class="btn btn-floating btn-large" ><i class="material-icons">brightness_6</i></a>
+      <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+          <h5>Thanks for stopping by :)</h5>
+          <p>Just wanted to let you know I support dark mode! Check out that icon in the navbar.
+          Don't forget to read some of my blogs if you have the time!</p>
+        </div>
+      </div>
+    </div>
     <footer class="page-footer">
     <div class="container">
       <div class="row">

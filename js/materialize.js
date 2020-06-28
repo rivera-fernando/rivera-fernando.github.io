@@ -12408,3 +12408,14 @@ if (dark_mode == "no") {
   document.cookie = "dark=yes; path=/";
 }
 }
+
+function displayPopUp () {
+  var dismissed = getCookie("dismissed");
+  if (dismissed != "yes") {
+    $('.tap-target').tapTarget('open');
+  }
+}
+
+function dismiss() {
+  document.cookie = "dismissed=yes; path=/";
+}
