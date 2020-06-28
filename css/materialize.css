@@ -8567,6 +8567,10 @@ input[type=range]::-ms-thumb {
   display: table-cell;
 }
 
+.dark-mode .tap-target-content {
+  color: #333333;
+}
+
 .tap-target-wave {
   position: absolute;
   border-radius: 50%;
