@@ -12414,12 +12414,10 @@ function displayPopUp () {
   if (dismissed == "yes") {
   }
   else {
-    $(document).ready(function(){
-      $('.tap-target').tapTarget('open');
-    });
+    $('.tap-target').tapTarget('open');
   }
 }
 
 function dismiss() {
-  document.cookie = "dismissed=yes; path=/";
+  document.cookie = "dism=yes; path=/";
 }
