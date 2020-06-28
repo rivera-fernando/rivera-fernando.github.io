@@ -12424,4 +12424,5 @@ function displayPopUp () {
 
 function dismiss() {
   document.cookie = "dismissed=yes; path=/";
+  document.getElementById('feat').style.display = "none";
 }
