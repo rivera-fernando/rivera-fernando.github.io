@@ -8582,6 +8582,9 @@ input[type=range]::-ms-thumb {
   border-radius: 50%;
   background-color: #ffffff;
 }
+.dark-mode .tap-target-wave::before, .tap-target-wave::after {
+  background-color: #212121;
+}
 
 .tap-target-wave::before {
   -webkit-transform: scale(0);
