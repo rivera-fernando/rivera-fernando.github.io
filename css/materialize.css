@@ -6013,9 +6013,17 @@ body.keyboard-focused .dropdown-content li:focus {
   margin-right: 5px;
 }
 
+.chip:hover {
+  background-color: #BFBFBF;
+}
+
 .dark-mode .chip {
   background-color: #2d2d2d;
   color: #FFFFFF;
+}
+
+.dark-mode .chip:hover {
+  background-color: #212121;
 }
 
 .chip:focus {
