@@ -2854,6 +2854,18 @@ video.responsive-video {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 90%; /* or a little bit higher */
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    max-width: 110%; /* or higher percentages. It's up to your taste */
+  }
+}
+
 .pin-top, .pin-bottom {
   position: relative;
 }
