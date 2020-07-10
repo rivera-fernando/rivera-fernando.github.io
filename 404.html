@@ -3,49 +3,50 @@ permalink: /404.html
 ---
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="theme-color" content="#212121">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Not Found</title>
-  </head>
-  <body>
+<html lang="en">
+    <head>
+      <meta name="theme-color" content="#212121" />
+      <!--Import Google Icon Font-->
+      <!-- TODO: make this font file local-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-1.png">
+      <!--Let browser know website is optimized for mobile-->
+      <!-- TODO: google viewports to understand -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <title>404</title>
+    </head>
+  <body onload="updateModeFromCookie();displayPopUp()">
     <nav>
      <div class="nav-wrapper">
        <ul id="nav-mobile" class="left">
-         <li><a href="../">Home</a></li>
-         <div onclick="myFunction()">
-           <i class="material-icons">tonality</i>
+         <li><a href="#">Home</a></li>
+         <li><a href="/blog">Blog</a></li>
+         <li><a href="/gallery">Gallery</a></li>
+       </ul>
+       <ul id="nav-mobile" class="right">
+         <div style="cursor: pointer;"onclick="changeMode()">
+           <i class="material-icons">brightness_6</i>
          </div>
        </ul>
      </div>
     </nav>
     <div class="container">
-      <h3>Woah!</h3>
-      <p>You're probably here by accident. Sadly, this page doesn't exist, but heres [something] for your troubles!</p>
+      <h1>404 Not Found</h1>
     </div>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript">
-      function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-      }
-    </script>
     <footer class="page-footer">
     <div class="container">
       <div class="row">
         <h4>Let's connect.</h4>
-          <a href="https://github.com/rivera-fernando/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="" width="120px"></a>
+          <!-- TODO: Make images accessible, add alt text -->
+          <a href="https://github.com/rivera-fernando/"><img src="./images/github_logo.png" alt="" width="120px"></a>
           <br>
-          <a href="https://www.linkedin.com/in/fernando-rivera-04559019b"><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="" width="150px"></a>
+          <a href="https://www.linkedin.com/in/fernando-rivera-04559019b"><img src="./images/linkedin_logo.svg" alt="" width="150px"></a>
           <br>
-          <a href="https://www.facebook.com/profile.php?id=100004651758696"> <img src="https://facebookbrand.com/wp-content/uploads/2016/05/162020WordmarkUpdate.png?w=490&h=67" alt="" width="180px"></a>
+          <a href="https://www.facebook.com/profile.php?id=100004651758696"> <img src="./images/facebook_logo.png" alt="" width="180px"></a>
       </div>
     </div>
     <div class="footer-copyright">
@@ -56,5 +57,6 @@ permalink: /404.html
     </div>
   </footer>
   </body>
+
 
 </html>
