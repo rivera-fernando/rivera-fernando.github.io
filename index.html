@@ -24,33 +24,13 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript">
-      $(document).ready(function(){
+      $(document).ready(function() {
         $('.parallax').parallax();
       });
       $(window).resize(function(){
         $('.parallax').parallax();
       });
       </script>
-      <!--
-      <script type="text/javascript">
-      $(document).ready(function(){
-        $(window).scroll(function(){
-        $("#overlay").css("opacity", 1 - $(window).scrollTop() / 200);
-      });
-    });
-      $(function () {
-        $("#inside-par").append("<div id='overlay'></div>");
-        $("#overlay").height(500).css({
-          'opacity': 1,
-          'width': '100%',
-          'z-index': 5000,
-          'background-image': 'url("images/logo.png")',
-          'background-repeat': 'no-repeat',
-          'background-size': 'contain',
-        });
-      });
-      </script>
-    -->
       <title>Fernando Rivera</title>
     </head>
   <body onload="updateModeFromCookie();displayPopUp()">
@@ -68,13 +48,11 @@
        </ul>
      </div>
     </nav>
-
     <div class="parallax-container">
       <div class="container">
         <h3 class="white-text">Hey, I'm Fernando Rivera.</h3>
         <div class="row">
           <div id="inside-par" class="col s8 m6 xl5">
-
           </div>
         </div>
       </div>
