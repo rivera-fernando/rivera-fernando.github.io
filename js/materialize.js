@@ -12426,3 +12426,19 @@ function dismiss() {
   document.cookie = "dismissed=yes; path=/";
   document.getElementById('feat').style.display = "none";
 }
+
+function scrollAbout() {
+  about = document.getElementById('about');
+  about.scrollIntoView({behavior: "smooth", block: "center"});
+
+}
+
+function scrollExp() {
+  about = document.getElementById('experience');
+  about.scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function scrollProj() {
+  about = document.getElementById('projects');
+  about.scrollIntoView({behavior: "smooth", block: "center"});
+}

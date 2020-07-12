@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171724362-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171724362-1');
+        </script>
+      <meta name="theme-color" content="#212121" />
+      <!--Import Google Icon Font-->
+      <!-- TODO: make this font file local-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materializedark.css"  media="screen,projection"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-1.png">
+      <!--Let browser know website is optimized for mobile-->
+      <!-- TODO: google viewports to understand -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+        $('.parallax').parallax();
+        $('.sidenav').sidenav();
+
+      });
+      $(window).resize(function(){
+        $('.parallax').parallax();
+      });
+      </script>
+      <title>Fernando Rivera</title>
+    </head>
+  <body onload="updateModeFromCookie();displayPopUp()">
+    <div class="navbar-fixed">
+      <nav>
+       <div class="nav-wrapper">
+         <a href="#"><img style="height: 55px;padding-left:10px"src="images/logo.png" alt=""></a>
+         <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons">menu</i></a>
+         <ul id="nav-mobile" class="right hide-on-small-and-down">
+           <li><a onclick="scrollAbout();">01. <span style="color: white">About</span></a></li>
+           <li><a onclick="scrollExp();">02. <span style="color: white">Experience</span></a></li>
+           <li><a onclick="scrollProj();">03. <span style="color: white">Projects</span></a></li>
+           <li><a onclick="scrollSkills();">04. <span style="color: white">Skills</span></a></li>
+           <li><a onclick="changeMode()"><i class="material-icons">brightness_6</i></a></li>
+         </ul>
+       </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">01. About Me</a></li>
+      <li><a href="/blog">02. Experience</a></li>
+      <li><a href="/gallery">03. Projects</a></li>
+      <li><a href="/gallery">04. Technical Skills</a></li>
+      <li><a onclick="changeMode()"><i class="material-icons">brightness_6</i></a></li>
+    </ul>
+    <div class="container">
+      <div style="height: 100vh" class="valign-wrapper">
+        <div class="row">
+          <div class="col s12">
+            <h6 style="color: #9575cd; margin-bottom: 5px">Hi, my name is</h6>
+            <h2 style="margin-top: 0; font-weight: bold">Fernando Rivera.</h2>
+          </div>
+          <div class="col s12 m6">
+            <h6>I'm a junior at the University of Florida who loves leveraging technology to make incredible websites.</h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="container">
+        <h4><span style="color: #9575cd;">01.&nbsp</span> About Me</h4>
+        <div class="row">
+          <div id="inside-par" class="  col s8 m6 xl5">
+            <blockquote>I'm a rising junior at the University of Florida majoring in computer science with a minor in statistics. As someone interested in technology, I love learning new skills and utilizing them to create useful projects. I mainly build full stack web applications and have occasionally dabbled in Android development. I can usually be found clacking away at my mechanical keyboard or keeping up with the latest phone and gadget releases. When I'm not at my desk, I enjoy playing ultimate and tennis, cooking, and finding more music to add to my playlists.</blockquote>
+          </div>
+        </div>
+      </div>
+      <div id="about"class="parallax"><img id="hover" style="object-fit: cover;"src="images/colorcopy.png"></div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <div style="min-height: 90vh" class="valign-wrapper">
+        <h4 class="hide-on-med-and-down"><span style="color: #9575cd;">02.&nbsp</span>Experience</h4>
+        <div id="experience">
+          <h4 class="hide-on-large-only"><span style="color: #9575cd;">02.&nbsp</span>Experience</h4>
+          <div style="margin-bottom:0px;" class="row">
+            <div class="col xxl4 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a href="https://buildyourfuture.withgoogle.com/programs/step/">Google</a><h6>(Summer 2020)</h6></span>
+                  <p>I work as a STEP Intern with the Google EngProd Team. This consists of a 4-week
+                  long <a href="https://github.com/googleinterns/step">starter project</a> to familiarize
+                  ourselves with the necessary technologies to complete a <a href="https://covidiena.appspot.com">capstone project</a>
+                  for the remaining 7 weeks.</p>
+                  <br>
+                  <div onclick="window.open('https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/java.png" >
+                    Java Servlets
+                  </div>
+                  <div onclick="window.open('https://cloud.google.com/appengine');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/appengine.png" >
+                    App Engine
+                  </div>
+                  <div onclick="window.open('https://cloud.google.com/datastore');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/datastore.png" >
+                    Datastore
+                  </div>
+                  <div onclick="window.open('https://htmlunit.sourceforge.io/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/htmlunit.png" >
+                    HtmlUnit
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col xxl4 m6 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a href="https://registrar.ufl.edu/cdesc.php?crs=cen3031">University of Florida</a><h6>(Spring 2020, Fall 2020)</h6></span>
+                  <p>I worked as a teaching assistant for CEN3031 (Introduction to Software Engineering). This class introduces software engineering as a discipline and full-stack web development utilizing the MERN stack. I co-led two ~30 student discussion periods weekly for the technical side of the course, hosted office hours twice a week, and have given guest lectures to the full class of ~250 on technical demos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col xxl4 m6 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/">Google CSSI-Coursera</a><h6>(Summer 2019, 2020)</h6></span>
+                  <p>I was a teaching assistant for the CSSI-Coursera Programming Foundations Specialization. My responsibilities included conducting weekly video-chat office hours for my 12-student cohort and responding to any questions they had over Slack while organizing community building activities. This position was offered to me after I had completed the same program as one of the top students Summer 2018.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div style="min-height: 90vh" class="valign-wrapper">
+        <div id="projects">
+          <h4 class="hide-on-large-only"><span style="color: #9575cd;">03.&nbsp</span>Projects</h4>
+          <div style="margin-bottom:0px;" class="row">
+            <div class="col xxl4 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a  href="https://swmp-sblease.herokuapp.com/">Swampy Sublease</a><h6>(Fall 2020 - Present)</h6></span>
+                  <p>This project began during SwampHacks 2020, but my team and I decided to continue improving upon it. It aims to solve and centralize the problem of advertising off-campus apartment subleases for University of Florida students. Users are able to list their sublease, specifying different fields of information, as well as browse the available options and filter by common criteria.</p>
+                  <br>
+                  <div onclick="window.open('https://www.djangoproject.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/django.png" >
+                    Django
+                  </div>
+                  <div onclick="window.open('https://www.heroku.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/heroku.png" >
+                    Heroku
+                  </div>
+                  <div onclick="window.open('https://www.mongodb.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/mongo.png" >
+                    MongoDB
+                  </div>
+                  <div onclick="window.open('https://www.sendgrid.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/sendgrid.png" >
+                    SendGrid
+                  </div>
+                  <div onclick="window.open('https://materializecss.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/materialize.png" >
+                    MaterializeCSS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col xxl4 m6 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a  href="https://transcr-tool.herokuapp.com/">Transcript Formatter</a><h6>(Fall 2020)</h6></span>
+                  <p>After downloading my unofficial transcript from the UF website countless times, I realized it was less than ideal when converted to a PDF. I sought to create a version that would format it in a better way, creating a more informative experience. Users input their UF credentials and are then presented with a styled, printer-friendly version of all the information on their transcript. (broken due to new 2FA from UF, coming soon) </p>
+                  <br>
+                  <div onclick="window.open('https://www.djangoproject.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/django.png" >
+                    Django
+                  </div>
+                  <div onclick="window.open('https://www.selenium.dev/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/selenium.png" >
+                    Selenium
+                  </div>
+                  <div onclick="window.open('https://www.heroku.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/heroku.png" >
+                    Heroku
+                  </div>
+                  <div onclick="window.open('https://bulma.io/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/bulma.png" >
+                    Bulma
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col xxl4 m6 s12">
+              <div class="card z-depth-3">
+                <div class="card-content">
+                  <span class="card-title"><a  href="https://github.com/Group-9E-CEN3031/paracosm-proj">Paracosm File Uploader</a><h6>(Fall 2019)</h6></span>
+                  <p>Class project for CEN3031. My team and I created a tool for <a  href="https://paracosm.io/">Paracosm</a>, a local Gainesville company to have access to a versioned history of their device-unique calibration files. I served as the scrum master for a 5 person team, and took part in daily standup meetings, sprint retrospectives as well as other agile techniques.</p>
+                  <br>
+                  <div onclick="window.open('https://reactjs.org/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/react.png" >
+                    React
+                  </div>
+                  <div onclick="window.open('https://nodejs.org/en/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/node.png" >
+                    Node
+                  </div>
+                  <div onclick="window.open('https://expressjs.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/express.png" >
+                    Express
+                  </div>
+                  <div onclick="window.open('https://aws.amazon.com/s3/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/s3.png" >
+                    AWS S3
+                  </div>
+                  <div onclick="window.open('https://firebase.google.com/');" style="cursor: pointer;"class="chip">
+                    <img src="./logos/firebase.png" >
+                    Firebase
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="hide-on-med-and-down"><span style="color: #9575cd;">03.&nbsp</span>Projects</h4>
+      </div>
+      <br><br>
+      <div class="row">
+        <h4><span style="color: #9575cd;">04.&nbsp</span>Technical Skills</h4>
+        <div class="col s12 m6">
+          <h5>Languages</h5>
+          <ul>
+            <li>Experienced with Python, Java, C++, JavaScript, HTML, CSS</li>
+            <li>Familiar with C, R, MATLAB, SQL</li>
+          </ul>
+          <h5>Frameworks</h5>
+          <ul>
+            <li>Django, Express, React, MaterializeCSS</li>
+          </ul>
+          <h5>Tools</h5>
+          <ul>
+            <li>Git, MongoDB Atlas, VirtualBox, Android Studio</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <h5>Relevant Coursework</h5>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Introduction to Software Engineering</li>
+            <li>Computer Organization</li>
+            <li>Operating Systems</li>
+            <li>Information and Database Systems 1</li>
+            <li>Software Security</li>
+            <!--
+            <li>Computer Network Fundamentals</li>
+            <li>Programming Language Concepts</li>
+            -->
+          </ul>
+        </div>
+      </div>
+    <div class="row">
+        <h4>Download my <a href="./resume.pdf" download>Resume</a></h4>
+    </div>
+  </div>
+    <div id="feat" class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
+      <a onclick="dismiss();"id="menu" class="btn btn-floating btn-large" ><i class="material-icons">brightness_6</i></a>
+      <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+          <h5 class="hide-on-small-only">Thanks for stopping by :)</h5>
+          <p>Just wanted to let you know I support dark mode! Check out that icon in the navbar.
+          Make sure to click the icon to never see this message again.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <h4>Let's connect.</h4>
+          <!-- TODO: Make images accessible, add alt text -->
+          <a href="https://github.com/rivera-fernando/"><img src="./images/github_logo.png" alt="" width="120px"></a>
+          <br>
+          <a href="https://www.linkedin.com/in/fernando-rivera-04559019b"><img src="./images/linkedin_logo.svg" alt="" width="150px"></a>
+          <br>
+          <a href="https://www.facebook.com/profile.php?id=100004651758696"> <img src="./images/facebook_logo.png" alt="" width="180px"></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Created with <span style="color:#673ab7;"><3</span> by myself
+      <a class="right" href="mailto: frcompsci@gmail.com">Send me an email!</a>
+      </div>
+    </div>
+  </footer>
+  </body>
+
+
+</html>
