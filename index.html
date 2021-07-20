@@ -34,19 +34,10 @@
       </script>
       <title>Fernando Rivera</title>
     </head>
-  <body onload="updateModeFromCookie();displayPopUp()">
+  <body class="dark-mode">
     <nav>
      <div class="nav-wrapper">
-       <ul id="nav-mobile" class="left">
-         <li><a href="#">Home</a></li>
-         <li><a href="/blog">Blog</a></li>
-         <li><a href="/gallery">Gallery</a></li>
-       </ul>
-       <ul id="nav-mobile" class="right">
-         <div style="cursor: pointer;"onclick="changeMode()">
-           <i class="material-icons">brightness_6</i>
-         </div>
-       </ul>
+       <a href="#"><img style="height: 55px;padding-left:10px"src="images/logo.png" alt=""></a>
      </div>
     </nav>
     <div class="container">
@@ -56,23 +47,12 @@
           <div class="col s12">
             <h6 style="color: #9575cd; margin-bottom: 5px">Hi, my name is</h6>
             <h2 style="margin-top: 0; font-weight: bold">Fernando Rivera.</h2>
-            <h6>I'm a junior at the University of Florida who loves leveraging technology to make incredible websites.</h6>
+            <h6>I'm a senior at the University of Florida who loves leveraging technology to make incredible websites.</h6>
+            <blockquote>I'm currently finishing off my computer science major with a minor in statistics. As someone interested in technology, I love learning new skills and utilizing them to create useful projects. I mainly build full stack web applications and have occasionally dabbled in Android development. I can usually be found typing away at my mechanical keyboard or keeping up with the latest phone and gadget releases. When I'm not at my desk, I enjoy playing ultimate and tennis, cooking, photography, and finding more music to add to my playlists. Check out my <a href="/blog">blog</a> or <a href="/">nature photography</a> if you're interested!</blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="parallax-container">
-      <div class="container">
-        <h4><span style="color: #9575cd;">01.&nbsp</span> About Me</h4>
-        <div class="row">
-          <div id="inside-par" class="  col s8 m6 xl5">
-            <blockquote>I'm a rising junior at the University of Florida majoring in computer science with a minor in statistics. As someone interested in technology, I love learning new skills and utilizing them to create useful projects. I mainly build full stack web applications and have occasionally dabbled in Android development. I can usually be found clacking away at my mechanical keyboard or keeping up with the latest phone and gadget releases. When I'm not at my desk, I enjoy playing ultimate and tennis, cooking, and finding more music to add to my playlists.</blockquote>
-          </div>
-        </div>
-      </div>
-      <div id="about"class="parallax"><img id="hover" style="object-fit: cover;"src="images/colorcopy.png"></div>
-    </div>
-    <br><br><br><br>
     <div class="container">
       <div style="min-height: 90vh" class="valign-wrapper">
         <h4 class="hide-on-med-and-down"><span style="color: #9575cd;">02.&nbsp</span>Experience</h4>
@@ -250,14 +230,15 @@
           <ul>
             <li>Data Structures and Algorithms</li>
             <li>Introduction to Software Engineering</li>
+            <li>Programming Language Concepts</li>
+            <li>Design Patterns in OOP</li>
             <li>Computer Organization</li>
             <li>Operating Systems</li>
             <li>Information and Database Systems 1</li>
             <li>Software Security</li>
-            <!--
             <li>Computer Network Fundamentals</li>
-            <li>Programming Language Concepts</li>
-            -->
+            <li>Human-Computer Interaction</li>
+            <li>Naturual Language Processing w Python</li>
           </ul>
         </div>
       </div>
@@ -265,16 +246,6 @@
         <h4>Download my <a href="./resume.pdf" download>Resume</a></h4>
     </div>
   </div>
-    <div id="feat" class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
-      <a onclick="dismiss();"id="menu" class="btn btn-floating btn-large" ><i class="material-icons">brightness_6</i></a>
-      <div class="tap-target" data-target="menu">
-        <div class="tap-target-content">
-          <h5 class="hide-on-small-only">Thanks for stopping by :)</h5>
-          <p>Just wanted to let you know I support dark mode! Check out that icon in the navbar.
-          Make sure to click the icon to never see this message again.</p>
-        </div>
-      </div>
-    </div>
     <footer class="page-footer">
     <div class="container">
       <div class="row">
