@@ -3900,7 +3900,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         var windowHeight = window.innerHeight;
         var windowBottom = scrollTop + windowHeight;
         var percentScrolled = (windowBottom - top) / (containerHeight + windowHeight);
-        var parallax = parallaxDist * percentScrolled * 1.7;
+        var parallax = parallaxDist * percentScrolled * 1.3;
 
         if (!this._enabled) {
           this.$img[0].style.transform = '';
