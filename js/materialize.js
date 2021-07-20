@@ -3900,7 +3900,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         var windowHeight = window.innerHeight;
         var windowBottom = scrollTop + windowHeight;
         var percentScrolled = (windowBottom - top) / (containerHeight + windowHeight);
-        var parallax = parallaxDist * percentScrolled * 1.3;
+        var parallax = parallaxDist * percentScrolled * 1.7;
 
         if (!this._enabled) {
           this.$img[0].style.transform = '';
@@ -12427,18 +12427,6 @@ function dismiss() {
   document.getElementById('feat').style.display = "none";
 }
 
-function scrollAbout() {
-  about = document.getElementById('about');
-  about.scrollIntoView({behavior: "smooth", block: "center"});
-
-}
-
-function scrollExp() {
-  about = document.getElementById('experience');
-  about.scrollIntoView({behavior: "smooth", block: "center"});
-}
-
-function scrollProj() {
-  about = document.getElementById('projects');
-  about.scrollIntoView({behavior: "smooth", block: "center"});
+function closeSide() {
+  $('.sidenav').sidenav('close');
 }
